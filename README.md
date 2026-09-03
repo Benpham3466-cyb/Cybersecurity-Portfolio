@@ -36,8 +36,8 @@ Managed Windows users, local groups, passwords, group membership, and hidden-fil
 
 Evaluated common router, Wi-Fi, device, access-control, and recovery risks and documented defense-in-depth recommendations using CISA guidance.
 
-- [Wireshark Protocol Security Analysis](projects/wireshark-protocol-security-analysis.md)
-  - Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext credential exposure, and demonstrate how encryption protects sensitive data.
+### [Wireshark Protocol Security Analysis](projects/wireshark-protocol-security-analysis.md)
+  Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext credential exposure, and demonstrate how encryption protects sensitive data.
   
 ## Current Focus
 
