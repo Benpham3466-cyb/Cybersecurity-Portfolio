@@ -20,13 +20,11 @@ My current areas of study include Linux and Windows administration, networking, 
 
 ## Projects
 
-Project write-ups will be added as I complete and document my cybersecurity labs.
-
-### [VirusTotal Malware Analysis](projects/virustotal-malware-analysis.md)
+### [VirusTotal Malware Analysis](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/virustotal-malware-analysis.md)
 
 Analyzed a suspicious file using VirusTotal, identified Mimikatz-related activity, assessed credential-theft risk, and documented recommended incident-response actions.
 
-### [Linux Command-Line and Log Analysis](projects/linux-command-line-and-log-analysis.md)
+### [Linux Command-Line and Log Analysis](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/linux-command-line-and-log-analysis.md)
 
 Used Linux navigation, file-management, filtering, and pipeline commands to search logs, extract information, and analyze system data.
 
