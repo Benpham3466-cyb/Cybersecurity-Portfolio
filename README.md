@@ -3,7 +3,7 @@ Hands-on cybersecurity labs and projects covering Linux, Windows, networking, ma
 
 ## About Me
 
-I am currently completing the University of Florida Certified Cybersecurity Associate Program and developing hands-on skills in information technology and cybersecurity.
+I am currently completing the University of Florida Certified Cybersecurity Associate/Analyst Program and developing hands-on skills in information technology and cybersecurity.
 
 My current areas of study include Linux and Windows administration, networking, security analysis, virtualization, and AWS cloud security. This portfolio documents my projects, labs, technical processes, and lessons learned.
 
