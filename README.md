@@ -28,6 +28,10 @@ Analyzed a suspicious file using VirusTotal, identified Mimikatz-related activit
 
 Used Linux navigation, file-management, filtering, and pipeline commands to search logs, extract information, and analyze system data.
 
+### [Windows User, Group, and File Management](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/windows-user-group-file-management.md)
+
+Managed Windows users, local groups, passwords, group membership, and hidden-file attributes through PowerShell while applying least-privilege principles.
+
 ## Current Focus
 
 - Completing the UF Certified Cybersecurity Associate Program
