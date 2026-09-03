@@ -20,6 +20,8 @@ My current areas of study include Linux and Windows administration, networking, 
 
 ## Projects
 
+Project write-ups will be added as I complete and document my cybersecurity labs.
+
 ### [VirusTotal Malware Analysis](projects/virustotal-malware-analysis.md)
 
 Analyzed a suspicious file using VirusTotal, identified Mimikatz-related activity, assessed credential-theft risk, and documented recommended incident-response actions.
