@@ -32,6 +32,10 @@ Used Linux navigation, file-management, filtering, and pipeline commands to sear
 
 Managed Windows users, local groups, passwords, group membership, and hidden-file attributes through PowerShell while applying least-privilege principles.
 
+### [Home Network Security Assessment](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/home-network-security-assessment.md)
+
+Evaluated common router, Wi-Fi, device, access-control, and recovery risks and documented defense-in-depth recommendations using CISA guidance.
+
 ## Current Focus
 
 - Completing the UF Certified Cybersecurity Associate Program
