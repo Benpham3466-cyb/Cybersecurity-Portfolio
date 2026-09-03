@@ -36,6 +36,7 @@ Managed Windows users, local groups, passwords, group membership, and hidden-fil
 
 Evaluated common router, Wi-Fi, device, access-control, and recovery risks and documented defense-in-depth recommendations using CISA guidance.
 
+- [Wireshark Protocol Security Analysis](projects/wireshark-protocol-security-analysis.md)
 ## Current Focus
 
 - Completing the UF Certified Cybersecurity Associate Program
