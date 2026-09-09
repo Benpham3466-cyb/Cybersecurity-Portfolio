@@ -1,11 +1,14 @@
-# Cybersecurity-Portfolio
-Hands-on cybersecurity labs and projects covering Linux, Windows, networking, malware analysis, endpoint threat hunting, and cloud security.
+# Benjamin Pham | Cybersecurity Portfolio
+
+Hands-on cybersecurity labs and projects covering endpoint threat hunting, Linux, Windows, networking, malware analysis, and cloud security.
 
 ## About Me
 
-I am currently completing the University of Florida Certified Cybersecurity Associate/Analyst Program and developing hands-on skills in information technology and cybersecurity.
+I am a University of South Florida student pursuing a B.S. in Exercise Science while completing the University of Florida's 18-week Certified Cybersecurity Associate Program. I am building practical IT and cybersecurity experience while preparing for entry-level IT support, cybersecurity internship, and SOC analyst opportunities.
 
-My current areas of study include Linux and Windows administration, networking, security analysis, virtualization, and AWS cloud security. This portfolio documents my projects, labs, technical processes, and lessons learned.
+Through hands-on labs, I have investigated macOS endpoint activity with osquery, analyzed suspicious files with VirusTotal, examined network traffic with Wireshark, and practiced Windows and Linux administration, access control, home-network hardening, virtualization, and cloud-security fundamentals.
+
+Each project documents the objective, tools, methodology, evidence, findings, remediation recommendations, and lessons learned.
 
 ## Technical Skills
 
@@ -48,5 +51,6 @@ Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext cr
 ## Current Focus
 
 - Completing the UF Certified Cybersecurity Associate Program
-- Building practical IT and cybersecurity experience
-- Preparing for entry-level IT support and cybersecurity opportunities
+- Developing SOC-relevant skills in log analysis, detection, incident response, and endpoint monitoring
+- Building hands-on YARA, SIEM, and cross-platform monitoring projects
+- Preparing for entry-level IT support, cybersecurity internship, and SOC analyst opportunities
