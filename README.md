@@ -1,5 +1,5 @@
 # Cybersecurity-Portfolio
-Hands-on cybersecurity labs and projects covering Linux, Windows, networking, malware analysis, and cloud security.
+Hands-on cybersecurity labs and projects covering Linux, Windows, networking, malware analysis, endpoint threat hunting, and cloud security.
 
 ## About Me
 
@@ -10,6 +10,7 @@ My current areas of study include Linux and Windows administration, networking, 
 ## Technical Skills
 
 - Linux and Windows command-line administration
+- macOS threat hunting with osquery
 - Networking and common protocols
 - Wireshark packet analysis
 - VirusTotal malware investigation
@@ -19,6 +20,10 @@ My current areas of study include Linux and Windows administration, networking, 
 - Technical troubleshooting and documentation
 
 ## Projects
+
+### [macOS Threat Hunting with osquery](projects/macos-osquery-threat-hunting.md)
+
+Used osquery and native macOS utilities to baseline an Apple Silicon Mac, correlate processes with listening ports, investigate launchd persistence, validate an unfamiliar executable, review browser extensions, remediate unwanted software, and verify the results.
 
 ### [VirusTotal Malware Analysis](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/virustotal-malware-analysis.md)
 
@@ -37,8 +42,9 @@ Managed Windows users, local groups, passwords, group membership, and hidden-fil
 Evaluated common router, Wi-Fi, device, access-control, and recovery risks and documented defense-in-depth recommendations using CISA guidance.
 
 ### [Wireshark Protocol Security Analysis](projects/wireshark-protocol-security-analysis.md)
-  Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext credential exposure, and demonstrate how encryption protects sensitive data.
-  
+
+Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext credential exposure, and demonstrate how encryption protects sensitive data.
+
 ## Current Focus
 
 - Completing the UF Certified Cybersecurity Associate Program
