@@ -24,6 +24,10 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 ## Projects
 
+### [Wireshark TCP SYN Scan Investigation](projects/wireshark-tcp-syn-scan-investigation.md)
+
+Completed a guided training-capture investigation to identify a scanner and target, establish a UTC timeline, examine destination ports, and distinguish a SYN → SYN/ACK → RST exchange from a completed TCP handshake.
+
 ### [macOS Threat Hunting with osquery](projects/macos-osquery-threat-hunting.md)
 
 Used osquery and native macOS utilities to baseline an Apple Silicon Mac, correlate processes with listening ports, investigate launchd persistence, validate an unfamiliar executable, review browser extensions, remediate unwanted software, and verify the results.
