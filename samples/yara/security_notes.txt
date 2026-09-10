@@ -1,0 +1,1 @@
+Class notes: Mimikatz is a credential-dumping tool discussed by defenders.

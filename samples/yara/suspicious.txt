@@ -1,0 +1,1 @@
+Training sample: powershell -enc credential_dump mimikatz
