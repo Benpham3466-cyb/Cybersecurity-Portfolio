@@ -6,7 +6,7 @@ Hands-on cybersecurity labs and projects covering endpoint threat hunting, Linux
 
 I am a University of South Florida student pursuing a B.S. in Exercise Science while completing the University of Florida's 18-week Certified Cybersecurity Associate Program. I am building practical IT and cybersecurity experience while preparing for entry-level IT support, cybersecurity internship, and SOC analyst opportunities.
 
-Through hands-on labs, I have investigated macOS endpoint activity with osquery, analyzed suspicious files with VirusTotal, examined network traffic with Wireshark, and practiced Windows and Linux administration, access control, home-network hardening, virtualization, and cloud-security fundamentals.
+Through hands-on labs, I have investigated macOS endpoint activity with osquery, created and tuned YARA detection rules, analyzed suspicious files with VirusTotal, examined network traffic with Wireshark, and practiced Windows and Linux administration, access control, home-network hardening, virtualization, and cloud-security fundamentals.
 
 Each project documents the objective, tools, methodology, evidence, findings, remediation recommendations, and lessons learned.
 
@@ -14,6 +14,7 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 - Linux and Windows command-line administration
 - macOS threat hunting with osquery
+- YARA rule development and false-positive tuning
 - Networking and common protocols
 - Wireshark packet analysis
 - VirusTotal malware investigation
@@ -23,6 +24,10 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 - Technical troubleshooting and documentation
 
 ## Projects
+
+### [YARA File Detection and Rule Tuning](projects/yara-file-detection-rule-tuning.md)
+
+Created and tested YARA rules against harmless training files, compared detection sensitivity, analyzed a false positive, and corrected scan scope to prevent rules from matching their own source files.
 
 ### [Wireshark TCP SYN Scan Investigation](projects/wireshark-tcp-syn-scan-investigation.md)
 
@@ -56,5 +61,5 @@ Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext cr
 
 - Completing the UF Certified Cybersecurity Associate Program
 - Developing SOC-relevant skills in log analysis, detection, incident response, and endpoint monitoring
-- Building hands-on YARA, SIEM, and cross-platform monitoring projects
+- Building hands-on SIEM and cross-platform monitoring projects
 - Preparing for entry-level IT support, cybersecurity internship, and SOC analyst opportunities
