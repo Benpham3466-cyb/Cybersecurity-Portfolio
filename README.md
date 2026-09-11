@@ -28,6 +28,9 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 ### [YARA File Detection and Rule Tuning](projects/yara-file-detection-rule-tuning.md)
 
 Created and tested YARA rules against harmless training files, compared detection sensitivity, analyzed a false positive, and corrected scan scope to prevent rules from matching their own source files.
+### [macOS Authentication Log Investigation](projects/macos-authentication-log-investigation.md)
+
+Investigated a controlled sudo authentication event using macOS Unified Log, identified the account and timeline, preserved evidence with SHA-256 integrity verification, documented visibility limitations, and made an evidence-based close-versus-escalate decision.
 
 ### [Wireshark TCP SYN Scan Investigation](projects/wireshark-tcp-syn-scan-investigation.md)
 

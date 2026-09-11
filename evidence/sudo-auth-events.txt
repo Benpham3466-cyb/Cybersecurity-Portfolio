@@ -1,0 +1,5 @@
+Timestamp               Ty Process[PID:TID]
+2026-09-10 02:07:20.781 Df sudo[63495:fa3c4] [com.apple.xpc:connection] [0x600001d240f0] activating connection: mach=true listener=false peer=false name=com.apple.CryptoTokenKit.AuthenticationHintsProvider.daemon.libxpc
+2026-09-10 02:11:49.176 Df sudo[64547:fbde3] [com.apple.xpc:connection] [0x60000336c2d0] activating connection: mach=true listener=false peer=false name=com.apple.CryptoTokenKit.AuthenticationHintsProvider.daemon.libxpc
+2026-09-10 02:11:50.738 Df sudo[64547:fbde3] (libpam.2.dylib) in pam_sm_authenticate(): OpenDirectory - The authtok is incorrect.
+2026-09-10 02:11:51.193 Df sudo[64547:fbde3] [com.apple.xpc:connection] [0x6000033781e0] activating connection: mach=true listener=false peer=false name=com.apple.CryptoTokenKit.AuthenticationHintsProvider.daemon.libxpc
