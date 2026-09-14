@@ -25,6 +25,10 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 ## Projects
 
+### [Microsoft Sentinel Tag-Change Investigation](projects/sentinel-tag-change-investigation.md)
+
+Completed a guided Azure Activity log investigation with KQL, correlated controlled tag changes with alerts, reviewed duplicate detections, and documented a benign incident disposition and validation limits.
+
 ### [YARA File Detection and Rule Tuning](projects/yara-file-detection-rule-tuning.md)
 
 Created and tested YARA rules against harmless training files, compared detection sensitivity, analyzed a false positive, and corrected scan scope to prevent rules from matching their own source files.
