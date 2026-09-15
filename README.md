@@ -25,6 +25,10 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 ## Projects
 
+### [Phishing Email Analysis — BTLO](projects/btlo-phishing-email-analysis.md)
+
+Completed a guided phishing-email investigation on macOS, examined message layers and delivery headers, performed reverse DNS, and documented an earnings lure with clear limits on landing-page behavior and recipient impact.
+
 ### [Microsoft Sentinel Tag-Change Investigation](projects/sentinel-tag-change-investigation.md)
 
 Completed a guided Azure Activity log investigation with KQL, correlated controlled tag changes with alerts, reviewed duplicate detections, and documented a benign incident disposition and validation limits.
