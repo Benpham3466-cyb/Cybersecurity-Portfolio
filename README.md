@@ -25,6 +25,10 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 ## Projects
 
+### [Windows Authentication Investigation — Part 1](projects/windows-authentication-investigation.md)
+
+Investigated controlled Windows sign-ins, distinguished a missing remote-logon right from an incorrect password, built a three-event UTC timeline, and preserved exported logs with SHA-256 verification. Sysmon and Wazuh are planned for the next phase.
+
 ### [Phishing Email Analysis — BTLO](projects/btlo-phishing-email-analysis.md)
 
 Completed a guided phishing-email investigation on macOS, examined message layers and delivery headers, performed reverse DNS, and documented an earnings lure with clear limits on landing-page behavior and recipient impact.
