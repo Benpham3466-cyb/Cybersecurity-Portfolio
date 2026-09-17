@@ -25,9 +25,13 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 ## Projects
 
+### [Windows, Sysmon, and Wazuh Home SOC Lab](projects/windows-sysmon-wazuh-lab.md)
+
+Built a guided Windows/Ubuntu monitoring lab, verified Sysmon event receipt separately from alerts, and tested a scoped custom detection with exported, hash-verified evidence. Includes linked investigation write-ups and documented limitations.
+
 ### [Windows Authentication Investigation — Part 1](projects/windows-authentication-investigation.md)
 
-Investigated controlled Windows sign-ins, distinguished a missing remote-logon right from an incorrect password, built a three-event UTC timeline, and preserved exported logs with SHA-256 verification. Sysmon and Wazuh are planned for the next phase.
+Investigated controlled Windows sign-ins, distinguished a missing remote-logon right from an incorrect password, built a three-event UTC timeline, and preserved exported logs with SHA-256 verification. The completed Sysmon/Wazuh case study is linked from the [shared lab overview](projects/windows-sysmon-wazuh-lab.md).
 
 ### [Phishing Email Analysis — BTLO](projects/btlo-phishing-email-analysis.md)
 
