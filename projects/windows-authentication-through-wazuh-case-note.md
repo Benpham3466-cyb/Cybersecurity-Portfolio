@@ -26,9 +26,20 @@ Windows event times are in UTC above. The Wazuh browser showed Eastern time and 
 
 - I inspected Windows Security events `4720`, `4722`, `4738`, `4625`, and `4624` during the investigation.
 - Wazuh Threat Hunting returned five `SocTest` alerts from agent `SOC-WIN11` in the selected 24-hour window.
-- [Wazuh event-list screenshot](images/windows-auth-soc-test-event-list.png) shows the five alerts.
-- [Successful-login detail, redacted](images/windows-auth-4624-success-redacted.png) shows event `4624`, `SocTest`, and logon type `2`.
-- [Failed-login detail, redacted](images/windows-auth-4625-failure-redacted.png) shows event `4625`, `SocTest`, logon type `2`, and incorrect-password status codes. The original screenshots remain in the private evidence folder.
+
+The three screenshots are shown below. The lab IP and account SIDs are blacked out in the detailed screenshots; the originals remain in the private evidence folder.
+
+**Five Wazuh alerts for `SocTest`:**
+
+![Wazuh Threat Hunting event list showing five SocTest alerts](images/windows-auth-soc-test-event-list.png)
+
+**Failed login, event `4625`:** The detail shows `SocTest`, logon type `2`, and incorrect-password status codes.
+
+![Wazuh event 4625 showing the failed SocTest login and incorrect-password codes](images/windows-auth-4625-failure-redacted.png)
+
+**Successful login, event `4624`:** The detail shows `SocTest` and logon type `2`.
+
+![Wazuh event 4624 showing the successful SocTest login](images/windows-auth-4624-success-redacted.png)
 
 **Limits:** I did not verify which attribute changed in event `4738` or review broader activity after the successful login. Confirm whether the `SocTest` lab account should be retained for later exercises or removed during cleanup.
 
