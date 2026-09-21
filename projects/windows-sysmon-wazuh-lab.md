@@ -20,7 +20,7 @@ SSH provided remote administration and file transfer. Ubuntu firewall rules rest
 |---|---|---|
 | [Windows Authentication Investigation — Part 1](windows-authentication-investigation.md) | Complete | Distinguished logon-right denial from an incorrect password, correlated a successful sign-in, and preserved Windows logs. |
 | [Missing Sysmon Alert and Custom Detection](wazuh-sysmon-detection-investigation.md) | Complete with documented limitations | Verified a fresh event in raw archives, traced agent-initiated discovery activity, tested a PowerShell-parent rule, and hash-verified exported evidence. |
-| Windows authentication through Wazuh | Planned | A future case to practice SIEM investigation with fewer hints; no findings claimed yet. |
+| [Windows authentication through Wazuh](windows-authentication-through-wazuh.md) | Complete | Correlated account creation and changes with one failed and one successful local login, checked Windows events against Wazuh alerts, and documented a benign true-positive decision. Includes a case note and screenshots. |
 
 ## What this lab demonstrates
 
@@ -28,11 +28,12 @@ SSH provided remote administration and file transfer. Ubuntu firewall rules rest
 - Linux administration, SSH identity checks, scoped firewall rules, and connectivity troubleshooting.
 - Wazuh endpoint enrollment and Sysmon event-channel collection.
 - Separating event receipt, decoding, rule matching, and saved alerts.
+- Correlating account-management and authentication alerts with their source Windows Security events before deciding whether to close a case.
 - Testing a custom detection with matching and nonmatching parent processes.
 - Preserving evidence outside the VM and verifying SHA-256 baselines.
 
 ## Scope
 
-Completed work consists of controlled lab activities with step-by-step guidance. Alerts generated during these tests do not establish an attack. Each investigation documents its own evidence, conclusions, and limitations. Raw event exports and credentials remain private.
+Completed work consists of controlled lab activities with varying levels of coaching. For the Wazuh authentication case, I performed the test, examined the records, and made the disposition with coaching on setup, searching, and note review. Alerts generated during these tests do not establish an attack. Each investigation documents its own evidence, conclusions, and limitations. Raw event exports and credentials remain private.
 
 [Back to portfolio](../README.md)

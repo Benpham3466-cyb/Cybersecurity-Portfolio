@@ -29,6 +29,10 @@ Each project documents the objective, tools, methodology, evidence, findings, re
 
 Built a guided Windows/Ubuntu monitoring lab, verified Sysmon event receipt separately from alerts, and tested a scoped custom detection with exported, hash-verified evidence. Includes linked investigation write-ups and documented limitations.
 
+### [Windows Authentication Through Wazuh](projects/windows-authentication-through-wazuh.md)
+
+Investigated a controlled account creation and login sequence in Wazuh, checked five alerts against Windows Security events, and documented an evidence-based benign true-positive decision. Includes a case note and redacted screenshots.
+
 ### [Windows Authentication Investigation — Part 1](projects/windows-authentication-investigation.md)
 
 Investigated controlled Windows sign-ins, distinguished a missing remote-logon right from an incorrect password, built a three-event UTC timeline, and preserved exported logs with SHA-256 verification. The completed Sysmon/Wazuh case study is linked from the [shared lab overview](projects/windows-sysmon-wazuh-lab.md).
