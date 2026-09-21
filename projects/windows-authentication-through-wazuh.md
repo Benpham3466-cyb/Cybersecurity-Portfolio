@@ -22,6 +22,12 @@ Wazuh showed five alerts for the account. I compared them with Windows event IDs
 
 ![Wazuh Threat Hunting results showing five SocTest alerts](images/windows-auth-soc-test-event-list.png)
 
+The detailed alerts below show the local interactive login (`logonType` `2`). The failed-login record also shows the incorrect-password status codes. The lab IP and account SIDs are blacked out in these publication copies.
+
+![Wazuh event 4625 showing the failed SocTest login and incorrect-password codes](images/windows-auth-4625-failure-redacted.png)
+
+![Wazuh event 4624 showing the successful SocTest login](images/windows-auth-4624-success-redacted.png)
+
 [Read the case note](windows-authentication-through-wazuh-case-note.md) for the disposition, record IDs, timeline, and limits.
 
 ## What I learned
