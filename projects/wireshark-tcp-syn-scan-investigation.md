@@ -4,7 +4,7 @@
 
 In this guided UF training lab, I investigated a supplied packet capture in Wireshark inside a Windows training virtual machine. I used conversation statistics, display filters, packet timestamps, and TCP stream analysis to identify scanning activity and interpret the target's responses.
 
-This report was prepared with AI coaching and writing assistance. The findings below are based on the packet details and statistics visible in screenshots collected during the exercise. The original capture is not redistributed.
+The findings below are based on the packet details and statistics visible in screenshots collected during the exercise. The original capture is not redistributed.
 
 ## Findings
 
