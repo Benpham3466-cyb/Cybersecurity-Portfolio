@@ -37,6 +37,10 @@ Investigated a controlled account creation and login sequence in Wazuh, checked 
 
 Investigated controlled Windows sign-ins, distinguished a missing remote-logon right from an incorrect password, built a three-event UTC timeline, and preserved exported logs with SHA-256 verification. The completed Sysmon/Wazuh case study is linked from the [shared lab overview](projects/windows-sysmon-wazuh-lab.md).
 
+### [Personal-Mailbox Phishing Investigation](projects/personal-mailbox-phishing-investigation.md)
+
+Investigated a real suspicious billing email from my own Spam folder, checked its sender headers and button destinations, classified and reported it as phishing, and documented what the evidence could not confirm. Includes two annotated screenshots and a concise case note.
+
 ### [Phishing Email Analysis — BTLO](projects/btlo-phishing-email-analysis.md)
 
 Completed a guided phishing-email investigation on macOS, examined message layers and delivery headers, performed reverse DNS, and documented an earnings lure with clear limits on landing-page behavior and recipient impact.
