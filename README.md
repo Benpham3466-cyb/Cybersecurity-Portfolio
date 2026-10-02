@@ -1,92 +1,87 @@
-# Benjamin Pham | Cybersecurity Portfolio
+# Ben Pham | Cybersecurity Portfolio
 
-Hands-on cybersecurity labs and projects covering endpoint threat hunting, Linux, Windows, networking, malware analysis, and cloud security.
+Home-lab investigations, coursework, and personal projects focused on security alerts, endpoint logs, phishing, and network traffic.
 
-## About Me
+## About me
 
-I am a University of South Florida student pursuing a B.S. in Exercise Science while completing the University of Florida's 18-week Certified Cybersecurity Associate Program. I am building practical IT and cybersecurity experience while preparing for entry-level IT support, cybersecurity internship, and SOC analyst opportunities.
+I’m a cybersecurity student in Tampa, Florida, preparing for IT support, cybersecurity internship, and entry-level SOC opportunities. I’m completing the University of Florida’s 18-week Certified Cybersecurity Associate Program while pursuing a B.S. in Exercise Science at the University of South Florida.
 
-Through hands-on labs, I have investigated macOS endpoint activity with osquery, created and tuned YARA detection rules, analyzed suspicious files with VirusTotal, examined network traffic with Wireshark, and practiced Windows and Linux administration, access control, home-network hardening, virtualization, and cloud-security fundamentals.
+These write-ups show what I checked, the evidence I used, the decision I reached, and what remains uncertain. Lab tests are identified as lab tests; they are not workplace incidents.
 
-Each project documents the objective, tools, methodology, evidence, findings, remediation recommendations, and lessons learned.
+## Start here
 
-## Technical Skills
+### [Windows authentication through Wazuh](projects/windows-authentication-through-wazuh.md)
 
-- Linux and Windows command-line administration
-- macOS threat hunting with osquery
-- YARA rule development and false-positive tuning
-- Networking and common protocols
-- Wireshark packet analysis
-- VirusTotal malware investigation
-- User, group, and permission management
-- Virtual machines and cloud fundamentals
-- AWS EC2 and security concepts
-- Technical troubleshooting and documentation
+Investigated a controlled account-creation and login sequence. I checked five Wazuh alerts against Windows Security events, built a UTC timeline, and documented a benign true-positive decision supported by the authorized test activity.
 
-## Projects
+**Tools:** Wazuh, Windows Security logs  
+**Evidence:** Redacted screenshots and a [concise SOC case note](projects/windows-authentication-through-wazuh-case-note.md)
 
-### [Windows, Sysmon, and Wazuh Home SOC Lab](projects/windows-sysmon-wazuh-lab.md)
+### [Investigating a missing Sysmon alert and testing a Wazuh detection](projects/wazuh-sysmon-detection-investigation.md)
 
-Built a guided Windows/Ubuntu monitoring lab, verified Sysmon event receipt separately from alerts, and tested a scoped custom detection with exported, hash-verified evidence. Includes linked investigation write-ups and documented limitations.
+Verified that a fresh process event reached Wazuh even though the alert search did not show a corresponding Windows alert. I tested a scoped rule that produced two intended positive alerts and documented the limits of the negative comparison.
 
-### [Windows Authentication Through Wazuh](projects/windows-authentication-through-wazuh.md)
+**Tools:** Sysmon, Wazuh, PowerShell  
+**Evidence:** Rule logic, test results, screenshots, and SHA-256 checks of exported files
 
-Investigated a controlled account creation and login sequence in Wazuh, checked five alerts against Windows Security events, and documented an evidence-based benign true-positive decision. Includes a case note and redacted screenshots.
+### [Personal-mailbox phishing investigation](projects/personal-mailbox-phishing-investigation.md)
 
-### [Windows Authentication Investigation — Part 1](projects/windows-authentication-investigation.md)
+Reviewed a suspicious billing warning from my own mailbox. I examined headers and button destinations, classified and reported the message as phishing, and explained why the email alone did not establish account or device compromise.
 
-Investigated controlled Windows sign-ins, distinguished a missing remote-logon right from an incorrect password, built a three-event UTC timeline, and preserved exported logs with SHA-256 verification. The completed Sysmon/Wazuh case study is linked from the [shared lab overview](projects/windows-sysmon-wazuh-lab.md).
+**Tools:** Gmail, raw email headers and HTML  
+**Evidence:** Annotated screenshots, observations, and a case note
 
-### [Personal-Mailbox Phishing Investigation](projects/personal-mailbox-phishing-investigation.md)
+### [Microsoft Sentinel: authorized Azure tag changes](projects/sentinel-tag-change-investigation.md)
 
-Investigated a real suspicious billing email from my own Spam folder, checked its sender headers and button destinations, classified and reported it as phishing, and documented what the evidence could not confirm. Includes two annotated screenshots and a concise case note.
+Used KQL to investigate controlled Azure tag changes. I compared timestamps and correlation IDs, traced alerts back to source events, and confirmed a benign incident disposition. The write-up separates verified results from unresolved duplicate-alert behavior.
 
-### [Phishing Email Analysis — BTLO](projects/btlo-phishing-email-analysis.md)
+**Tools:** Microsoft Sentinel, AzureActivity, KQL  
+**Evidence:** Query logic, a transcribed timeline, and validation limits
 
-Completed a guided phishing-email investigation on macOS, examined message layers and delivery headers, performed reverse DNS, and documented an earnings lure with clear limits on landing-page behavior and recipient impact.
+## Current investigation — LokiBot sample
 
-### [Microsoft Sentinel Tag-Change Investigation](projects/sentinel-tag-change-investigation.md)
+**Status: In progress. Updated October 2, 2026.**
 
-Completed a guided Azure Activity log investigation with KQL, correlated controlled tag changes with alerts, reviewed duplicate detections, and documented a benign incident disposition and validation limits.
+- Reviewed the purchase-order email and archive context and verified the executable’s SHA-256 against the source reference.
+- Imported the executable into Ghidra and examined its entry point, imports, and strings. A Visual Basic runtime reference is a static lead, not proof of runtime behavior.
+- Launched the sample in a network-disconnected Windows VM and saved Process Monitor PML and Sysmon EVTX files. The launch and nonzero evidence-file sizes were verified.
+- **Next question:** Did the first-run process start child processes? I will check the saved recordings before making behavioral claims.
 
-### [YARA File Detection and Rule Tuning](projects/yara-file-detection-rule-tuning.md)
+Runtime findings, sample-specific YARA/Sigma rules, collected-evidence analysis through Wazuh, and the final case report remain pending. Capture coverage and saved-event contents still need review.
 
-Created and tested YARA rules against harmless training files, compared detection sensitivity, analyzed a false positive, and corrected scan scope to prevent rules from matching their own source files.
-### [macOS Authentication Log Investigation](projects/macos-authentication-log-investigation.md)
+## More investigations and projects
 
-Investigated a controlled sudo authentication event using macOS Unified Log, identified the account and timeline, preserved evidence with SHA-256 integrity verification, documented visibility limitations, and made an evidence-based close-versus-escalate decision.
+### Endpoint monitoring and authentication
 
-### [Wireshark TCP SYN Scan Investigation](projects/wireshark-tcp-syn-scan-investigation.md)
+- [Windows, Sysmon, and Wazuh home SOC lab](projects/windows-sysmon-wazuh-lab.md) — Environment overview linking the collection, detection, and authentication investigations.
+- [Windows authentication investigation — Part 1](projects/windows-authentication-investigation.md) — Distinguished a missing remote-logon right from an incorrect password and preserved a three-event UTC timeline.
+- [macOS authentication log investigation](projects/macos-authentication-log-investigation.md) — Reviewed a controlled sudo event, preserved evidence, and documented logging limits.
+- [macOS threat hunting with osquery](projects/macos-osquery-threat-hunting.md) — Reviewed processes, listening ports, launchd entries, and browser extensions; investigated unfamiliar software and verified remediation.
 
-Completed a guided training-capture investigation to identify a scanner and target, establish a UTC timeline, examine destination ports, and distinguish a SYN → SYN/ACK → RST exchange from a completed TCP handshake.
+### Email, network traffic, and file triage
 
-### [macOS Threat Hunting with osquery](projects/macos-osquery-threat-hunting.md)
+- [Phishing email analysis — BTLO](projects/btlo-phishing-email-analysis.md) — Training investigation of message layers, delivery headers, reverse DNS, and a phishing lure.
+- [Wireshark TCP SYN scan investigation](projects/wireshark-tcp-syn-scan-investigation.md) — Identified scanning activity in a supplied capture and distinguished a SYN scan exchange from a completed handshake.
+- [Wireshark protocol security analysis](projects/wireshark-protocol-security-analysis.md) — Compared plaintext and encrypted protocols and examined credential exposure.
+- [YARA file detection and rule tuning](projects/yara-file-detection-rule-tuning.md) — Tested rules on harmless text samples, compared thresholds, investigated a false positive, and corrected scan scope.
+- [VirusTotal file triage](projects/virustotal-malware-analysis.md) — Reviewed vendor detections and file metadata associated with Mimikatz and assessed potential credential-theft risk. This was file triage, not evidence of credential theft on a host.
 
-Used osquery and native macOS utilities to baseline an Apple Silicon Mac, correlate processes with listening ports, investigate launchd persistence, validate an unfamiliar executable, review browser extensions, remediate unwanted software, and verify the results.
+### IT and security fundamentals
 
-### [VirusTotal Malware Analysis](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/virustotal-malware-analysis.md)
+- [Linux command-line and log analysis](projects/linux-command-line-and-log-analysis.md) — Used filtering and pipelines to search logs and extract information.
+- [Windows user, group, and file management](projects/windows-user-group-file-management.md) — Practiced local account administration, group membership, and file attributes through PowerShell.
+- [Home network security assessment](projects/home-network-security-assessment.md) — Reviewed common network and device risks and documented security recommendations.
 
-Analyzed a suspicious file using VirusTotal, identified Mimikatz-related activity, assessed credential-theft risk, and documented recommended incident-response actions.
+## Tools and skills demonstrated
 
-### [Linux Command-Line and Log Analysis](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/linux-command-line-and-log-analysis.md)
+- **Security monitoring:** Wazuh, Sysmon, Windows Security logs, Microsoft Sentinel, KQL
+- **Investigation:** Alert-to-event correlation, UTC timelines, email-header review, Wireshark packet analysis
+- **Detection and triage:** Scoped Wazuh rules, YARA testing on harmless samples, VirusTotal, SHA-256 verification
+- **Systems:** PowerShell, Linux command line, macOS/osquery, local accounts and permissions, virtual machines
+- **Documentation:** Evidence-based case notes, redacted screenshots, test results, and clear limitations
 
-Used Linux navigation, file-management, filtering, and pipeline commands to search logs, extract information, and analyze system data.
+Ghidra and Process Monitor are part of the current malware investigation; that project’s runtime conclusions are still pending.
 
-### [Windows User, Group, and File Management](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/windows-user-group-file-management.md)
+## How I approach a case
 
-Managed Windows users, local groups, passwords, group membership, and hidden-file attributes through PowerShell while applying least-privilege principles.
-
-### [Home Network Security Assessment](https://github.com/Benpham3466-cyb/cybersecurity-portfolio/blob/main/projects/home-network-security-assessment.md)
-
-Evaluated common router, Wi-Fi, device, access-control, and recovery risks and documented defense-in-depth recommendations using CISA guidance.
-
-### [Wireshark Protocol Security Analysis](projects/wireshark-protocol-security-analysis.md)
-
-Used Wireshark to compare HTTP/HTTPS and FTP/SFTP traffic, identify plaintext credential exposure, and demonstrate how encryption protects sensitive data.
-
-## Current Focus
-
-- Completing the UF Certified Cybersecurity Associate Program
-- Developing SOC-relevant skills in log analysis, detection, incident response, and endpoint monitoring
-- Building hands-on SIEM and cross-platform monitoring projects
-- Preparing for entry-level IT support, cybersecurity internship, and SOC analyst opportunities
+Start with a question, check the source evidence, consider an ordinary explanation, and document why I would close the case or continue investigating. An alert name is a starting point; the evidence and context determine the decision.
