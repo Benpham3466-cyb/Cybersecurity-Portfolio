@@ -38,7 +38,7 @@ Used KQL to investigate controlled Azure tag changes. I compared timestamps and 
 **Tools:** Microsoft Sentinel, AzureActivity, KQL  
 **Evidence:** Query logic, a transcribed timeline, and validation limits
 
-## Current investigation — LokiBot sample
+## Current investigation — Malware analysis (LokiBot)
 
 **Status: In progress. Updated October 2, 2026.**
 
